@@ -254,3 +254,33 @@ footer {
     background: white;
     color: black;
 }
+
+.resume-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover animation */
+.resume-btn::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: #00aaff;
+    left: 0;
+    top: 0;
+    transition: 0.4s;
+    z-index: -1;
+}
+
+.resume-btn:hover::after {
+    width: 100%;
+}
+
+.resume-btn:hover {
+    color: black;
+}
